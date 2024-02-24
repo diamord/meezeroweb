@@ -3,6 +3,7 @@
         { "src": "/invite", "dest": "/invite.html" },
         { "src": "/invite/", "dest": "/invite" },
         { "src": "/invite/index.html", "dest": "/invite/index.html" },
-        { "src": "/invite/*", "dest": "/invite/index.html" }
+        { "src": "/invite/*", "dest": "/invite/index.html" },
+        { "source": "/invite/src/img/:path*", "dest": "/invite/src/img/:path*" }
     ]
 }
