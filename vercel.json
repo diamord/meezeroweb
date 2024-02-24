@@ -1,6 +1,6 @@
 {
     "routes": [
-        { "src": "/invite", "dest": "/invite" },
+        { "src": "/invite", "dest": "/invite.html" },
         { "src": "/invite/", "dest": "/invite" },
         { "src": "/invite/index.html", "dest": "/invite/index.html" },
         { "src": "/invite/*", "dest": "/invite/index.html" }
