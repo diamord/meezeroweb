@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="zh_tw">
+    <head>
+        <title>MeeZero 感謝您邀請!</title>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <link rel="icon" href="./src/img/bot.jpg">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+        <style>
+            @import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
+
+            body {
+                font-family: 'Noto Sans TC', '黑體-繁','微軟正黑體', sans-serif !important;
+
+                background: url('./src/img/back.jpg') center center fixed;
+                backdrop-filter: blur(8px);
+                -webkit-backdrop-filter: blur(8px);
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;
+                margin: 0px;
+                padding: 0px;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+
+            .content img {
+                width: 30%;
+                height: auto;
+                border-radius: 50%;
+                object-fit: cover;
+            }
+
+            .title {
+                font-size: 450%;
+                color: white;
+                font-weight: bold;
+                text-align: center;
+                text-shadow: 0px 0px 6px rgba(228, 228, 228, 0.7);
+            }
+
+            .content p {
+                font-size: 180%;
+                color: grey;
+                font-weight: bold;
+                text-align: center;
+            }
+
+            .content {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: center;
+                padding: 5%;
+                height: 800px;
+                text-align: center; 
+            }
+
+            .header {
+                box-shadow: 0 20px 80px rgba(0, 0, 0, 0.603);
+                backdrop-filter: blur(8px) saturate(80%);
+                border-radius: 20px;
+                width: 600px;
+                height: 400px;
+            }
+
+            .cards {
+                width: 30%;
+                text-align: center;
+            }
+
+            .foot {
+                text-align: center;
+            }
+
+            .foot a, p {
+                display: inline-block;
+            }
+
+            .hidden-card {
+                display: none;
+            }
+        </style>
+    </head>
+
+    <body>
+        <script>
+            AOS.init();
+        </script>
+
+        <div class="container-fluid content">
+            <div class="header">
+                <div style="height: 30px;"></div>
+                <img src="./src/img/bot.jpg" data-aos="flip-up" data-aos-duration="1000" data-aos-delay="300">
+                <h1 class="title" data-aos="flip-up" data-aos-duration="1000" data-aos-delay="300">MeeZero</h1>
+                <p data-aos="flip-up" data-aos-duration="1000" data-aos-delay="800">感謝您邀請本機器人!</p>
+                <p data-aos="flip-up" data-aos-duration="1000" data-aos-delay="800" id="sname"></p>
+            </div>
+        </div>
+
+        <div style="height: 50px;"></div>
+        <div class="page">
+            <div class="hidden-card" id="servercard">
+                <h1 class="title" data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="300">伺服器資訊</h1>
+                <div style="height: 30px;"></div>
+                <div class="container mt-4">
+                    <div class="card">
+                        <div class="card-body d-flex">
+                            <img id="serverIcon" alt="Server Icon" class="me-3" style="max-width: 100px; max-height: 100px;border-radius: 50%;">
+                            <div>
+                                <h5 class="card-title" id="serverName"></h5>
+                                <p class="card-text" id="serverMembers"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="height: 50px;"></div>
+            <h1 class="title" data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="300">了解更多</h1>
+            <div style="height: 30px;"></div>
+            <div>
+                <div style="display: flex;justify-content: center;align-items: center;" data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="800">
+                    <ul class="nav justify-content-center nav-pills flex-column" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="card1-tab" data-bs-toggle="tab" data-bs-target="#card1" type="button" role="tab" aria-controls="card1" aria-selected="true">❓ 如何使用</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="card2-tab" data-bs-toggle="tab" data-bs-target="#card2" type="button" role="tab" aria-controls="card2" aria-selected="false">👤 關於開發者</button>
+                        </li>
+                    </ul>
+                    <div class="tab-content cards" id="myTabContent">
+                        <div class="tab-pane show active" id="card1" role="tabpanel" aria-labelledby="card1-tab">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h3 class="card-title">如何使用本機器人?</h3>
+                                    <p class="card-text">
+                                        使用 <code>/help</code> 或 <code>/幫助</code> 來查看<br>
+                                        本機器人是致敬MEE6，程式碼及語言皆沒有抄襲或模仿。
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="card2" role="tabpanel" aria-labelledby="card2-tab">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h3 class="card-title">關於開發者</h3>
+                                    <p class="card-text">
+                                        Diamord, 已驗證蝦餃機器人開發者<br>
+                                        為500人以上群組<b>雫</b>的管理員與開發者<br>
+                                        同時也是Youtube 110+訂閱的頻道創立者
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="foot container-fluid">
+            <div style="height: 80px;"></div>
+            <p style="color: white;font-size: 18px;" data-aos="zoom-in" data-aos-duration="1000">Diamord &copy; 2023-2024</p>
+            <div style="white-space:nowrap;" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="500">
+                <a href="https://discord.gg/wVHxCJNMHE" style="text-decoration:none;"><p style="color: rgb(60, 210, 255);font-size: 15px;">官方 Discord</p></a><p style="color:white">&nbsp;&nbsp;|&nbsp;&nbsp;</p>
+                <a href="https://diamord.vercel.app" style="text-decoration:none;"><p style="color: rgb(60, 210, 255);font-size: 15px;">開發者網站</p></a><p style="color:white">&nbsp;&nbsp;|&nbsp;&nbsp;</p>
+                <a href="https://youtube.com/@diamord_tw" style="text-decoration:none;"><p style="color: rgb(60, 210, 255);font-size: 15px;">開發者 Youtube</p></a>
+            </div>
+            <br>
+            <p style="color: rgb(238, 238, 238);font-size: 15px;" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="1000">本網站的一切與MEE6官方無關，僅為致敬MEE6功能，程式語言及邏輯為自創。</p>
+            <div style="height: 100px;"></div>
+        </footer>
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    </body>
+</html>
