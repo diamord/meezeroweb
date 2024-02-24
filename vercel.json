@@ -5,6 +5,10 @@
         { "src": "/invite/", "dest": "/invite" },
         { "src": "/invite/index.html", "dest": "/invite/index.html" },
         { "src": "/invite/*", "dest": "/invite/index.html" },
-        { "src": "/invite/src/img/:path*", "dest": "/invite/src/img/:path*" }
+        { "src": "/rule", "dest": "/rule" },
+        { "src": "/rule*", "dest": "/rule" },
+        { "src": "/rule/", "dest": "/rule" },
+        { "src": "/rule/index.html", "dest": "/rule/index.html" },
+        { "src": "/rule/*", "dest": "/rule/index.html" }
     ]
 }

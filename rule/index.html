@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="zh_tw">
+    <head>
+        <title>MeeZero 使用規則與條款</title>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <link rel="icon" href="./src/img/bot.jpg">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+        <style>
+            @import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
+
+            body {
+                font-family: 'Noto Sans TC', '黑體-繁','微軟正黑體', sans-serif !important;
+
+                background: url('./src/img/back.jpg') center center fixed;
+                backdrop-filter: blur(8px);
+                -webkit-backdrop-filter: blur(8px);
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;
+                margin: 0px;
+                padding: 0px;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+
+            iframe {
+                overflow: hidden;
+                width: 800px;
+                height: 1000px;
+            }
+
+            .content img {
+                width: 30%;
+                height: auto;
+                border-radius: 50%;
+                object-fit: cover;
+            }
+
+            .title {
+                font-size: 450%;
+                color: white;
+                font-weight: bold;
+                text-align: center;
+                text-shadow: 0px 0px 6px rgba(228, 228, 228, 0.7);
+            }
+
+            .content p {
+                font-size: 180%;
+                color: grey;
+                font-weight: bold;
+                text-align: center;
+            }
+
+            .content {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: center;
+                padding: 5%;
+                height: 800px;
+                text-align: center; 
+            }
+
+            .header {
+                box-shadow: 0 20px 80px rgba(0, 0, 0, 0.603);
+                backdrop-filter: blur(8px) saturate(80%);
+                border-radius: 20px;
+                width: 600px;
+                height: 400px;
+            }
+
+            .foot {
+                text-align: center;
+            }
+
+            .foot a, p {
+                display: inline-block;
+            }
+        </style>
+    </head>
+
+    <body>
+        <script>
+            AOS.init();
+        </script>
+
+        <div class="container-fluid content">
+            <div class="header">
+                <div style="height: 30px;"></div>
+                <img src="./src/img/bot.jpg" data-aos="flip-up" data-aos-duration="1000" data-aos-delay="300">
+                <h1 class="title" data-aos="flip-up" data-aos-duration="1000" data-aos-delay="300">MeeZero</h1>
+                <p data-aos="flip-up" data-aos-duration="1000" data-aos-delay="800">機器人規則</p>
+                <p data-aos="flip-up" data-aos-duration="1000" data-aos-delay="800" id="sname"></p>
+            </div>
+            <div style="height:100px;"></div>
+            <iframe src="https://docs.google.com/document/d/e/2PACX-1vQhgQuqQZ9gds00X35MkDmFxfk1RrSsi5sQScY9tY8GZN4l56f4KwxJzsnIedW-s58UJRL-lnfmhwzf/pub?embedded=true"></iframe>
+        </div>
+        
+        <footer class="foot container-fluid">
+            <div style="height: 80px;"></div>
+            <p style="color: white;font-size: 18px;" data-aos="zoom-in" data-aos-duration="1000">Diamord &copy; 2023-2024</p>
+            <div style="white-space:nowrap;" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="500">
+                <a href="https://discord.gg/wVHxCJNMHE" style="text-decoration:none;"><p style="color: rgb(60, 210, 255);font-size: 15px;">官方 Discord</p></a><p style="color:white">&nbsp;&nbsp;|&nbsp;&nbsp;</p>
+                <a href="https://diamord.vercel.app" style="text-decoration:none;"><p style="color: rgb(60, 210, 255);font-size: 15px;">開發者網站</p></a><p style="color:white">&nbsp;&nbsp;|&nbsp;&nbsp;</p>
+                <a href="https://youtube.com/@diamord_tw" style="text-decoration:none;"><p style="color: rgb(60, 210, 255);font-size: 15px;">開發者 Youtube</p></a>
+            </div>
+            <br>
+            <p style="color: rgb(238, 238, 238);font-size: 15px;" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="1000">本網站的一切與MEE6官方無關，僅為致敬MEE6功能，程式語言及邏輯為自創。</p>
+            <div style="height: 100px;"></div>
+        </footer>
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    </body>
+</html>
